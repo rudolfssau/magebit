@@ -1,0 +1,302 @@
+* {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  min-height: 100vh;
+  background-image: url("./pictures/background_phone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main, #background {
+  min-height: 100vh;
+}
+
+html {
+  height: 100%;
+}
+
+button {
+  border: unset;
+  background-color: unset;
+}
+
+#nav-bar {
+  height: 5.4vh;
+  background-color: #ffffff;
+  padding: 10px 20px 16px 20px;
+}
+
+#nav-bar-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-bar-items-left {
+  margin-left: 10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.pineappleName {
+  display: none;
+}
+@media (min-height: 1194px) {
+  .pineappleName {
+    display: unset;
+    margin-left: 10px;
+    font-weight: 400;
+  }
+}
+
+#nav-bar-items-right {
+  display: flex;
+  padding: 11px 0px 5px 0px;
+}
+
+.pineappleLogo {
+  width: 24px;
+  height: 40px;
+  border: 2px;
+}
+
+#nav-bar-items-right > li > a {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.navbarFirstItem, .navbarSecondItem {
+  margin-right: 24px;
+  color: #6A707B;
+}
+
+.navbarLastItem {
+  margin-right: 0px;
+  color: #6A707B;
+}
+
+#main-content {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subscribe-box {
+  background-color: #ffffff;
+  margin: 30px 20px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.subscribe-box-heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.subscribe-box-subheading {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px 0px 15px 0px;
+  color: #6A707B;
+}
+
+#subscribe-box-email-container {
+  display: flex;
+  width: 100%;
+  padding: 18px;
+}
+
+#subscribe-box-email {
+  width: 100%;
+  border: unset;
+  font-size: 16px;
+}
+
+#subscribe-box-form {
+  width: 100%;
+  display: flex;
+}
+
+#subscribe-box-termsandconditions {
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #E3E3E4;
+}
+
+.subscribe-box-termsandconditions-checkbox {
+  height: 26px;
+  width: 26px;
+}
+
+.subscribe-box-checkbox-termsandconditions-text {
+  margin-left: 5vw;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6A707B;
+}
+.subscribe-box-checkbox-termsandconditions-text > a {
+  color: #131821;
+  text-decoration: underline;
+  font-weight: 550;
+}
+
+#subscribe-box-credentials-container {
+  width: 100%;
+}
+
+#subscribe-box-credentials-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.facebook, .instagram, .twitter, .youtube {
+  padding: 10px;
+  border: 2px solid #E3E3E4;
+  border-radius: 50%;
+  width: 20px;
+  height: 16px;
+  margin: 5px;
+}
+@media (min-height: 1194px) {
+  .facebook, .instagram, .twitter, .youtube {
+    margin: 10px;
+  }
+}
+
+.facebook:hover {
+  background-color: #4267B2;
+}
+
+.instagram:hover {
+  background-color: #C13584;
+}
+
+.twitter:hover {
+  background-color: #1DA1F2;
+}
+
+.youtube:hover {
+  color: white;
+  background-color: #FF0000;
+}
+
+.facebook:active {
+  background-color: #2F4A80;
+}
+
+.instagram:active {
+  background-color: #8F2762;
+}
+
+.twitter:active {
+  background-color: #177FBF;
+}
+
+.youtube:active {
+  background-color: #CC0000;
+}
+
+.errorMsg0, .errorMsg1, .errorMsg2, .errorMsg3 {
+  font-size: 9px;
+  font-weight: 900;
+  color: red;
+  margin-top: 10px;
+}
+
+.navbarFirstItem:hover, .navbarSecondItem:hover, .navbarLastItem:hover {
+  text-decoration: underline;
+}
+.navbarFirstItem:active, .navbarSecondItem:active, .navbarLastItem:active {
+  color: #233759;
+  text-decoration: underline;
+}
+
+.errorInput {
+  border: 1px solid #B80808;
+  border-left: 4px solid #B80808;
+}
+
+.okInput {
+  border: 1px solid #E3E3E4;
+  border-left: 4px solid #4066A5;
+}
+
+@media (min-height: 1194px) {
+  .errorMsg0, .errorMsg1, .errorMsg2, .errorMsg3 {
+    margin-top: -20px;
+  }
+  #nav-bar {
+    margin: 30px;
+  }
+  #main-content {
+    height: 80vh;
+  }
+  #subscribe-box-email-container {
+    margin: 30px 0px;
+  }
+  #subscribe-box-termsandconditions {
+    padding-bottom: 40px;
+  }
+  #subscribe-box-credentials-container {
+    padding-top: 20px;
+  }
+  .pineappleName {
+    display: unset;
+    margin-left: 10px;
+    font-weight: 400;
+  }
+  .subscribe-box-checkbox-termsandconditions-text {
+    margin-left: 12px;
+  }
+  .App {
+    display: flex;
+    background-image: unset;
+  }
+  #main {
+    background-color: #ffffff;
+    width: 75%;
+  }
+  #background {
+    width: 25%;
+    display: unset;
+    min-height: 100vh;
+    background-image: url("./pictures/image_summer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1000px) {
+  .pineappleName {
+    display: unset;
+  }
+  #main {
+    width: 30%;
+    background-color: #ffffff;
+  }
+  #background {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
